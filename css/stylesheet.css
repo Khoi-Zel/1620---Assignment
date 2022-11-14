@@ -1,0 +1,6 @@
+main{
+    display:grid;
+    font-family: 'Lobster', cursive;
+    grid-template-columns: 1px 1px 1px 1px 1px;
+    grid-template-rows: 1px 1px 1px 1px 1px;
+}
