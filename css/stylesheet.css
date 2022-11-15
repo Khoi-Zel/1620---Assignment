@@ -60,6 +60,15 @@ h1{
     margin: 10px;
 }
 
+#textarea{
+    margin: 2% ;
+    border: solid blue;
+    width: 95%;
+    padding: 10px 10px;
+}
+
+
+
 
 
 
