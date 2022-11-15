@@ -5,17 +5,62 @@ main{
     height: 100vh;
 }
 
+.note{
+    list-style: ".";
+    list-style-position: inside;
+}
 
 aside{
     grid-column: 1/2;
-    text-align: center;
     color: #4B7171;
     background-color: #F9F3EC;
 }
 
-section h1{
-    display: flex;
-    justify-content: center;
+section{
+    background-color: #edddd0;
     color: #4B7171;
 }
+
+h1{
+    display: flex;
+    justify-content: center;
+}
+
+.About{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    list-style-type: none;
+}
+
+.About li{
+    margin: 5px;
+}
+
+.Button{
+    display: flex;
+    justify-content: space-between;
+}
+
+.New_Note{
+    background-color: #5394A0;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 16px;
+    margin: 10px;
+} 
+
+.Dark_Theme{
+    background-color: #6F6A87;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 16px;
+    margin: 10px;
+}
+
+
+
+
 
