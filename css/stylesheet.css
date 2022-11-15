@@ -1,6 +1,21 @@
 main{
-    display:grid;
+    display: grid;
     font-family: 'Lobster', cursive;
-    grid-template-columns: 1px 1px 1px 1px 1px;
-    grid-template-rows: 1px 1px 1px 1px 1px;
+    grid-template-columns: 1fr 5fr ;
+    height: 100vh;
 }
+
+
+aside{
+    grid-column: 1/2;
+    text-align: center;
+    color: #4B7171;
+    background-color: #F9F3EC;
+}
+
+section h1{
+    display: flex;
+    justify-content: center;
+    color: #4B7171;
+}
+
