@@ -1,24 +1,42 @@
-const colorChangeDarkTheme = document.querySelector('.Dark_Theme')
-const colorChangeSideBar = document.querySelector('aside')
-const colorChangeTextArea = document.querySelector('#textarea')
+const DarkTheme = document.querySelector('.Dark_Theme')
+const SideBar = document.querySelector('aside')
+const TextArea = document.querySelector('#textarea')
 
 function changeColor(){
-    if (colorChangeDarkTheme.textContent === 'Dark Theme'){
-        colorChangeDarkTheme.textContent = 'Light Theme'
-        colorChangeDarkTheme.classList.toggle("change_theme_Button");
-        colorChangeSideBar.classList.toggle("change_theme_SideBar");
-        colorChangeTextArea.classList.toggle("change_theme_TextArea");
+    if (DarkTheme.textContent === 'Dark Theme'){
+        DarkTheme.textContent = 'Light Theme'
+        DarkTheme.classList.toggle("change_theme_Button");
+        SideBar.classList.toggle("change_theme_SideBar");
+        TextArea.classList.toggle("change_theme_TextArea");
     }
 
-    else if (colorChangeDarkTheme.textContent === 'Light Theme'){
-        colorChangeDarkTheme.textContent = 'Dark Theme'
-        colorChangeDarkTheme.classList.toggle("change_theme_Button");
-        colorChangeSideBar.classList.toggle("change_theme_SideBar");
-        colorChangeTextArea.classList.toggle("change_theme_TextArea");
+    else if (DarkTheme.textContent === 'Light Theme'){
+        DarkTheme.textContent = 'Dark Theme'
+        DarkTheme.classList.toggle("change_theme_Button");
+        SideBar.classList.toggle("change_theme_SideBar");
+        TextArea.classList.toggle("change_theme_TextArea");
     }
 }
 
-colorChangeDarkTheme.addEventListener("click", changeColor);
+DarkTheme.addEventListener("click", changeColor);
 
+
+const CancelButton = document.querySelector(".Cancel")
+const SaveButton = document.querySelector(".Save")
+
+function HideandShow(){
+    if (CancelButton.style.display === "none"){
+        TextArea.style.display = "block";
+        CancelButton.style.display = "block";
+        SaveButton.style.display = "block";
+    }
+    else {
+        TextArea.style.display = "none";
+        CancelButton.style.display = "none";
+        SaveButton.style.display = "none";
+    }
+}
+
+CancelButton.addEventListener("click", HideandShow);
 
 
