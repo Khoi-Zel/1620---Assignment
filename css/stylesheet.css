@@ -128,7 +128,7 @@
 main{
     display: grid;
     font-family: 'Lobster', cursive;
-    grid-template-columns: 1fr 5fr ;
+    grid-template-columns: 1fr 4fr ;
     height: 100vh;
 }
 
@@ -232,6 +232,24 @@ h1{
     list-style-type: none;
     padding: 0px;
 }
+}
+
+
+
+
+.change_theme_Button{
+    background-color: #D9827C;
+    color: #ffef96;
+}
+
+.change_theme_SideBar{
+    background-color: #878f99;
+    color: #d64161;
+}
+
+.change_theme_TextArea{
+    background-color: #bdcebe;
+    color: #c94c4c;
 }
 
 
